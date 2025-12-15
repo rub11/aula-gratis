@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevRuby — Central Oficial</title>
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --card: #151515;
+      --ruby: #c1121f;
+      --ruby-hover: #e11d2e;
+      --text: #ffffff;
+      --muted: #d0d0d0;
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #151515, #0a0a0a 60%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .header h1 span {
+      color: var(--ruby);
+    }
+
+    .header p {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #191919, #121212);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .btn {
+      margin-top: 14px;
+      text-align: center;
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--ruby), var(--ruby-hover));
+      color: #fff;
+      padding: 18px 22px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: 0.4px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      box-shadow: 0 8px 22px rgba(193,18,31,0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(193,18,31,0.55);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 15px;
+      color: #b5b5b5;
+      line-height: 1.7;
+      padding-top: 8px;
+    }
+
+    .footer span {
+      color: var(--ruby);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <h1><span>Dev</span>Ruby</h1>
+      <p>
+        Tecnologia que abre caminhos reais.<br />
+        Estrutura, clareza e suporte para quem quer crescer de verdade.
+      </p>
+    </header>
+
+    <!-- AULA GRATUITA -->
+    <section class="card">
+      <h2>🚀 Aula Gratuita — Sistemas que Geram Renda</h2>
+      <p>
+        Aprenda como transformar ideias em projetos digitais práticos,
+        bem estruturados e com potencial real de faturamento.
+      </p>
+      <a class="btn" href="video-aula/2025-11-19_12-48-13.mkv" target="_blank">
+        Baixar e Assistir aula gratuita agora
+      </a>
+    </section>
+
+    <!-- COMPRA -->
+    <section class="card">
+      <h2>🔥 Código de Vendas — Curso Completo</h2>
+      <p>
+        Tráfego pago, criação de sistemas, uso de IA e controle financeiro.
+        Um método completo para sair do zero e escalar com segurança.
+      </p>
+      <a class="btn" href="https://pay.kiwify.com.br/ajzDyVH" target="_blank">
+        Quero entrar para o Código de Vendas
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>
+        A DevRuby não vende atalhos.<br />
+        Aqui você constrói algo sólido, no seu ritmo.<br /><br />
+        <span>Seja bem-vindo.</span>
+      </p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
